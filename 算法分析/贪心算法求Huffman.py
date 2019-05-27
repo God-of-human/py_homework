@@ -52,7 +52,6 @@ class Huffman():
 
     def get_code(self):
         self.pre(self.root,0)
-
 def main():
     n = int(input())
     p =list(input().split())

@@ -5,10 +5,6 @@ import numpy as np
 def knapsack(v, w, c, n):
     #创建矩阵
     m = np.zeros((n + 1, c + 1),dtype=np.int)
-    jmax = min(w[n -1] - 1, c)
-    #这句要不要无所谓
-    # for j in range(jmax + 1):
-    #     m[n, j] = 0
     for j in range(w[n - 1], c + 1):
         m[n, j] = v[n - 1]
     for i in range (n - 1, 1, -1):
